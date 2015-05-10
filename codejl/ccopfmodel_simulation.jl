@@ -217,8 +217,8 @@ else
 end
 
 # Time steps to be solved:
-#numTimeSteps = size(wind_forecast,2)-1
-numTimeSteps = 1
+#numTimeSteps = size(wind_forecast,2)-1 # uncomment this line and comment the line below in order to run the full experiment. Note that this may take many hours to complete.
+numTimeSteps = 10
 println("$numTimeSteps time steps")
 
 # Set up wind farms, using data from time step 1
