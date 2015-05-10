@@ -1,0 +1,35 @@
+case ../data/bpa/casedjbpa.mat
+#case casedjbpa.m
+wind ../data/bpawind.dat
+costs ../data/bpa/costbpa.csv
+refbus 2209
+line_probability_threshold 0.01
+gen_probability_threshold 0.1666
+logfile casebpa.log
+loadscale 1.0
+
+mvaBase 100
+thermalLimitscale 0.9
+
+hydro_indices ../data/bpa/hydro_power_plants_indices.csv
+nuclear_indices ../data/bpa/nuclear_power_plants_indices.csv
+coal_indices ../data/bpa/coal_power_plants_indices.csv
+gas_indices ../data/bpa/gas_power_plants_indices.csv
+ramp_file ../data/bpa/rampbpa.csv
+loaded_lines_file ../data/bpa/overload_line_ind.csv
+
+wind_forecast_file ../data/bpa/season1/bpawind_det_forecast2160.csv
+wind_sigma_file ../data/bpa/season1/bpawind_det_sigma2160.csv
+load_file ../data/bpa/season1/load2160.csv
+hydro_limit_file ../data/bpa/season1/hydro_power_plants2160.csv
+
+loaded_lines_probability_threshold 0.01
+
+robust_mean_lower_file ../data/bpa/season1/bpawind_rob_mean_dn2160.csv
+robust_mean_upper_file ../data/bpa/season1/bpawind_rob_mean_up2160.csv
+robust_sigma_lower_file ../data/bpa/season1/bpawind_rob_sigma_dn2160.csv
+robust_sigma_upper_file ../data/bpa/season1/bpawind_rob_sigma_up2160.csv
+
+robust_budget 1.0 # fraction of wind farms. "false" to use ccopf model
+output_matfile ccopf_bpa_simulation_results_season1_gamma1.0.mat
+END
