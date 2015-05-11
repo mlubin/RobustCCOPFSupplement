@@ -1,7 +1,7 @@
 # RobustCCOPFSupplement
 Repository containing supplementary data and code for "A Robust Approach to Chance Constrained Optimal Power Flow with Renewable Generation" by Lubin, Dvorkin, and Backhaus
 
-Installation instructions:
+*Installation instructions:*
 
 The optimization model was implemented by using the [JuMPChance](https://github.com/mlubin/JuMPChance.jl) extension to [JuMP](https://github.com/JuliaOpt/JuMP.jl) in the [Julia](http://julialang.org/downloads/) programming language.
 Additionaly, we used Gurobi 6.0 in our numerical experiments. [Gurobi](http://www.gurobi.com/) is a commercial solver which must be installed and licensed separately (one may easily use a different solver if Gurobi is not available, see the JuMP documentation).
@@ -18,6 +18,8 @@ julia> Pkg.pin("JuMP", v"0.9.0")
 julia> Pkg.pin("JuMPChance", v"0.1.1")
 julia> Pkg.pin("Gurobi", v"0.1.26")
 ```
+
+*Running the code:*
 
 The code for the experiments is contained in the ``codejl`` directory. Note that it is under 700 lines of code. The file ``input.jl`` contains routines and data structures for processing the input, and the file ``ccopfmodel_simulation.jl`` (heavily commented) contains the main simulation logic and optimization model.
 
