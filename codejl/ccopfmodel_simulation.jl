@@ -33,9 +33,7 @@ function solve_ccopf(logfilename, refbus, line_probability_threshold, gen_probab
     # Power flow in each transmission line should be within the limits:
     @defVar(m, -lines[i].u <= barf[i=1:numlines] <= lines[i].u)
 
-    @defVar(m, beta[1:(numbuses-1)])
     @defVar(m, delta[1:(numbuses-1)])
-    @defVar(m, g[1:(numbuses-1)]) # generator variables
     @defVar(m, h[1:(numbuses-1)]) # \hat B^-1 \bar p
     @defVar(m, θ[1:(numbuses-1)]) # thetahat
 
