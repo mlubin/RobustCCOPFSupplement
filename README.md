@@ -1,5 +1,5 @@
 # RobustCCOPFSupplement
-Repository containing supplementary data and code for "A Robust Approach to Chance Constrained Optimal Power Flow with Renewable Generation" by Lubin, Dvorkin, and Backhaus
+Repository containing supplementary data and code for "A Robust Approach to Chance Constrained Optimal Power Flow with Renewable Generation" by Lubin, Dvorkin, and Backhaus. [DOI](http://dx.doi.org/10.1109/TPWRS.2015.2499753)
 
 *Installation instructions:*
 
