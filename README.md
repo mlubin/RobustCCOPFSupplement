@@ -31,5 +31,3 @@ julia ../codejl/ccopfmodel_simulation.jl bpa-season1-gamma1.0.dat
 By default, this will run a small sample (10 hours) from the first season used in the experiment. See line 220 of ``ccopfmodel_simulation.jl`` to adjust this. The output of the simulation is a ``.mat`` file (``ccopf_bpa_simulation_results_season1_gamma1.0.mat``) which can be opened directly in MATLAB or loaded in Julia via the MAT package. Contained in the ``.mat`` file are the optimal objective values, solution times, solution status, and optimal values for the decision variables. See lines 323 and below of ``ccopfmodel_simulation.jl`` for more details on the output format.
 
 The file ``bpa-season1-gamma1.0.dat`` specifies all of the input paths and parameters for the simulation. In particular, one can modify the ``robust_budget`` to chance the budget of uncertainty Γ for the parameters of the Gaussian distributions, as discussed in the paper.
-
-Further documentation is available on request.
